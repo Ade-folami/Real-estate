@@ -1,0 +1,35 @@
+.join {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+
+  &__header {
+    text-transform: uppercase;
+    color: $color-white;
+    font-family: tahoma;
+    padding: 3rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  &__link {
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    font-family: arial;
+    color: $color-primary;
+    background-color: $color-white;
+    margin-top: 5rem;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: 0rem 2rem 1rem rgba($color-black, 0.4);
+    }
+    &:active {
+      transform: translateY(1rem) scale(1);
+    }
+  }
+}

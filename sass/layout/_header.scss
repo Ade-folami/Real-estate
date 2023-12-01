@@ -1,0 +1,113 @@
+.header {
+  background-color: $color-white;
+  padding: 3rem;
+  min-height: 90vh;
+
+  @include respond(tab-land) {
+    padding: 2rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 1rem;
+  }
+
+  &__top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 90vw;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+      padding: 1rem;
+    }
+  }
+  &__heading {
+    font-family: arial;
+    font-weight: 300;
+    color: $color-black;
+    font-size: 1.3rem;
+  }
+
+  &__navigation {
+    margin-left: 10rem;
+
+    &-item {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-grey-dark;
+      padding-right: 2rem;
+      transition: all 0.5s;
+      font-family: arial;
+
+      &:hover {
+        color: $color-black;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+    }
+  }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__main-heading {
+    font-family: calibri;
+    color: $color-blue;
+    flex: 3;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__paragraph {
+    font-family: calibri;
+    color: $color-blue;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    width: 20rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+
+    @include respond(tab-land) {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    @include respond(tab-port) {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  &__division {
+    font-size: 2rem;
+    font-family: calibri;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+    &-text {
+      font-weight: 700;
+      color: $color-blue;
+    }
+  }
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    max-height: 40rem;
+    margin-top: 2rem;
+    // margin-bottom: 2rem;
+
+    &-image {
+      width: 48%;
+    }
+  }
+}

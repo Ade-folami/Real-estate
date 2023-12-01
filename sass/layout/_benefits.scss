@@ -1,0 +1,48 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+
+  &__row1 {
+    display: flex;
+  }
+
+  &__row2 {
+    display: flex;
+  }
+
+  &__item {
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+
+    @include respond(tab-port) {
+      margin: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    &-heading {
+      text-align: center;
+      color: $color-blue;
+      padding: 2rem;
+
+      @include respond(tab-port) {
+        padding: 1.5rem;
+      }
+    }
+
+    &-paragraph {
+      font-family: tahoma;
+      font-size: 2rem;
+      margin: 1rem;
+      padding: 1rem;
+      word-wrap: no-wrap;
+      line-break: normal;
+      font-weight: 500;
+
+      @include respond(tab-port) {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

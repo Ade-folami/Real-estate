@@ -1,0 +1,17 @@
+.btn,
+.btn:visited {
+  padding: 1rem 1rem;
+  background-color: $color-primary;
+  text-decoration: none;
+  color: $color-black;
+  transition: all 0.3s;
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}
+.btn:hover {
+  transform: scale(1.1) translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+}
+.btn:active {
+  transform: scale(1) translateY(0rem);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}

@@ -1,0 +1,124 @@
+.signup__body {
+  background-color: #eee;
+}
+.main {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: 80vh;
+
+  &__container {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-white, 0.6),
+        rgba($color-grey, 0.6)
+      ),
+      url(../../images/house-13.jpg);
+
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--heading {
+      display: inline-block;
+      text-align: center;
+      font-size: 3.3rem;
+      font-weight: 600;
+      color: $color-primary;
+      width: 50%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-primary;
+    background-color: $color-white;
+    padding: 4rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: arial;
+}
+.heading__detail {
+  font-family: arial;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
+}
+.label {
+  opacity: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+.username {
+  font-family: cursive;
+  padding: 0.5rem;
+  width: 50%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 3px solid rgba($color-primary, 0.6);
+  transition: all 0.2s;
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+    outline: none;
+  }
+}
+.email {
+  font-family: cursive;
+  padding: 0.5rem;
+  width: 50%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 3px solid rgba($color-primary, 0.6);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+    outline: none;
+  }
+}
+.password {
+  font-family: cursive;
+  padding: 0.5rem;
+  width: 50%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 3px solid rgba($color-primary, 0.6);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+    outline: none;
+  }
+}
+.account-create {
+  text-transform: uppercase;
+  font-family: cursive;
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 50%;
+  padding: 1rem 1.5rem;
+  border: 2px solid rgba($color-primary, 0.6);
+}
