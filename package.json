@@ -1,19 +1,15 @@
 {
-  "name": "r.estate",
+  "name": "r-estate",
   "version": "1.0.0",
-  "description": "site for imaginary real estate company",
-  "main": "index.js",
-  "dependencies": {
-    "jquery": "^3.6.0",
-    "node-sass": "^4.12.0",
-    "sass": "^1.53.0"
-  },
+  "description": "Real Estate company",
+ 
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "parcel": "^2.12.0"
   },
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
-  "author": "adefolami",
+  "author": "Adefolami",
   "license": "ISC"
 }

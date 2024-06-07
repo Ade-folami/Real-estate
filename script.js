@@ -13,3 +13,7 @@ const faqStn = document.querySelector(".section-faq");
 faqBtn.addEventListener("click", function (e) {
   faqStn.scrollIntoView({ behavior: "smooth" });
 });
+
+if (module.hot) {
+  module.hot.accept();
+}

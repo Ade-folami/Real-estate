@@ -1,0 +1,2 @@
+const e=document.querySelector("#header__navigation-collection"),o=document.querySelector(".section-collections");e.addEventListener("click",function(e){o.scrollIntoView({behavior:"smooth"})});const t=document.querySelector("#header__navigation-faq"),c=document.querySelector(".section-faq");t.addEventListener("click",function(e){c.scrollIntoView({behavior:"smooth"})}),module.hot&&module.hot.accept();
+//# sourceMappingURL=index.e6ea3d0b.js.map
